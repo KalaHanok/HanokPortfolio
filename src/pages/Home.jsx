@@ -2,8 +2,10 @@ import ParticlesComponent from "../components/ParticlesComponent";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import profile from "../assets/profile.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative h-screen overflow-hidden bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300">
       {/* ✅ Background Particles */}
@@ -59,14 +61,15 @@ const Home = () => {
             />
           </motion.p>
 
-          <motion.a
-            href="#projects"
+          <motion.button
+            onClick={() => navigate("/projects")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block mt-6 px-6 py-3 bg-blue-600 dark:bg-blue-500 text-white rounded-full shadow hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300"
           >
             🚀 Explore Projects
-          </motion.a>
+          </motion.button>
+
         </div>
       </div>
     </section>
