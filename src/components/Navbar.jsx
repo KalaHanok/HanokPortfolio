@@ -11,6 +11,7 @@ import {
   FaMoon,
 } from "react-icons/fa";
 import { ThemeContext } from "../context/ThemeContext";
+import logo from "../assets/logo.png"; // Assuming you have a logo image
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center text-gray-900 dark:text-white">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+          <img src={logo} alt="Logo" className="w-12 h-12 inline-block mr-2" />
           Hanok
         </Link>
 
