@@ -21,7 +21,7 @@ const AboutIntro = () => {
         viewport={{ once: true }}
         className="bg-gray-100 dark:bg-gray-800 p-8 rounded-xl shadow-md text-center transition-colors duration-500"
       >
-        <p className="text-lg text-gray-800 dark:text-gray-300 leading-relaxed mb-4">
+        <p className="text-lg text-gray-800 dark:text-gray-300 leading-relaxed mb-4 text-justify">
           I'm <span className="text-blue-600 dark:text-blue-400 font-semibold">Hanok Kala</span>, a passionate full-stack developer and machine learning enthusiast. I love building clean, user-friendly UIs and solving real-world problems using <span className="text-green-600 dark:text-green-400 font-semibold">AI</span>. I strive to deliver smart solutions through elegant code and thoughtful design.
         </p>
 

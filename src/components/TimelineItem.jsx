@@ -35,7 +35,7 @@ const TimelineItem = ({
         }
         transition={{ duration: 0.6, ease: "easeInOut" }}
         className={`w-full md:w-1/2 p-4 rounded-xl shadow-md transition-colors duration-300 ${
-          alignLeft ? "md:mr-auto text-left" : "md:ml-auto text-right"
+          alignLeft ? "md:mr-auto text-left" : "md:ml-auto text-left"
         } bg-white dark:bg-gray-800`}
       >
         <h4 className="text-lg font-bold text-gray-900 dark:text-white">
